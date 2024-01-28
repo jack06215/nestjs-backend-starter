@@ -1,18 +1,15 @@
 import { Entity, Property, PrimaryKey } from '@mikro-orm/core';
 
-@Entity()
-class Address {
+@Entity({ tableName: 'posts' })
+class PostEntity {
   @PrimaryKey()
   id: number;
 
   @Property()
-  street: string;
+  title: string;
 
   @Property()
-  city: string;
-
-  @Property()
-  country: string;
+  content: string;
 }
 
-export default Address;
+export default PostEntity;

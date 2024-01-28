@@ -596,6 +596,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jercle/yargonaut@npm:1.1.5":
+  version: 1.1.5
+  resolution: "@jercle/yargonaut@npm:1.1.5"
+  dependencies:
+    chalk: "npm:^4.1.2"
+    figlet: "npm:^1.5.2"
+    parent-require: "npm:^1.0.0"
+  checksum: 7a3a891ebafc97c78aa38354a2bb2c2b2a467f03fd653b09d2ae70420582330917ffb35869d9cbe48396c5a18cef34cdda5704a2df0b0a6383a75297a3661f66
+  languageName: node
+  linkType: hard
+
 "@jest/console@npm:^29.7.0":
   version: 29.7.0
   resolution: "@jest/console@npm:29.7.0"
@@ -920,6 +931,23 @@ __metadata:
   bin:
     node-pre-gyp: bin/node-pre-gyp
   checksum: 2b24b93c31beca1c91336fa3b3769fda98e202fb7f9771f0f4062588d36dcc30fcf8118c36aa747fa7f7610d8cf601872bdaaf62ce7822bb08b545d1bbe086cc
+  languageName: node
+  linkType: hard
+
+"@mikro-orm/cli@npm:^6.0.5":
+  version: 6.0.5
+  resolution: "@mikro-orm/cli@npm:6.0.5"
+  dependencies:
+    "@jercle/yargonaut": "npm:1.1.5"
+    "@mikro-orm/core": "npm:6.0.5"
+    "@mikro-orm/knex": "npm:6.0.5"
+    fs-extra: "npm:11.2.0"
+    tsconfig-paths: "npm:4.2.0"
+    yargs: "npm:17.7.2"
+  bin:
+    mikro-orm: cli
+    mikro-orm-esm: esm
+  checksum: 9d5387cba188126351dac2d42bfd825f981ca3804272aa10345ab5b7294745a5453c388253c32fc3d8d1a7f05e5a9380e3b7d48dad152f6adb84386adb5fda3d
   languageName: node
   linkType: hard
 
@@ -4137,6 +4165,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"figlet@npm:^1.5.2":
+  version: 1.7.0
+  resolution: "figlet@npm:1.7.0"
+  bin:
+    figlet: bin/index.js
+  checksum: bedd97fe5fa604002ae8c6bc0b08dea6f9701e0b268f42e601668956f50ff377ef592e24e182a6174a775abde9e2aa77697e324b8681619ae23bc85078439393
+  languageName: node
+  linkType: hard
+
 "figures@npm:^3.0.0":
   version: 3.2.0
   resolution: "figures@npm:3.2.0"
@@ -6760,6 +6797,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"parent-require@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "parent-require@npm:1.0.0"
+  checksum: 58eb17553192027a596bb3b13f567e4933894964ad47a9f9054a5dc4776e60e13903e937b2eec6e7afff8a34a4fc91b5397fdc6206aa2d50ba95b87059b4f2e0
+  languageName: node
+  linkType: hard
+
 "parse-json@npm:^5.2.0":
   version: 5.2.0
   resolution: "parse-json@npm:5.2.0"
@@ -7869,6 +7913,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "starter-api@workspace:."
   dependencies:
+    "@mikro-orm/cli": "npm:^6.0.5"
     "@mikro-orm/core": "npm:6.0.5"
     "@mikro-orm/migrations": "npm:6.0.5"
     "@mikro-orm/nestjs": "npm:5.2.3"
@@ -8924,7 +8969,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs@npm:^17.3.1":
+"yargs@npm:17.7.2, yargs@npm:^17.3.1":
   version: 17.7.2
   resolution: "yargs@npm:17.7.2"
   dependencies:

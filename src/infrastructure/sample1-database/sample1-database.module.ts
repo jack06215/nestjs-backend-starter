@@ -2,9 +2,9 @@ import { Logger, Module } from '@nestjs/common';
 import { PostgreSqlDriver } from '@mikro-orm/postgresql';
 import { TsMorphMetadataProvider } from '@mikro-orm/reflection';
 import { SqlHighlighter } from '@mikro-orm/sql-highlighter';
-import Address from './entities/address.entity';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MikroOrmModule } from '@mikro-orm/nestjs';
+import PostEntity from './entities/post.entity';
 
 const logger = new Logger('MikroORM');
 
@@ -24,7 +24,7 @@ const logger = new Logger('MikroORM');
         port: configService.get('POSTGRES_PORT'),
         debug: true,
         logger: logger.log.bind(logger),
-        entities: [Address],
+        entities: [PostEntity],
         baseDir: process.cwd(),
         forceUtcTimezone: true,
         autoLoadEntities: true,

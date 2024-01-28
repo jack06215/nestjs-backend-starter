@@ -4,6 +4,7 @@ import * as Joi from 'joi';
 import { HelloController } from './presentation/controllers/hello.controller';
 import { SayHelloUseCase } from './usecase/say-hello-usecase';
 import { Sample1Database } from './infrastructure/sample1-database/sample1-database.module';
+import { UserModule } from './domain/user.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { Sample1Database } from './infrastructure/sample1-database/sample1-datab
       }),
     }),
     Sample1Database,
+    UserModule,
   ],
   controllers: [HelloController],
   providers: [SayHelloUseCase],
