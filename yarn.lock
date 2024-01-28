@@ -966,6 +966,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mikro-orm/entity-generator@npm:^6.0.5":
+  version: 6.0.5
+  resolution: "@mikro-orm/entity-generator@npm:6.0.5"
+  dependencies:
+    "@mikro-orm/knex": "npm:6.0.5"
+    fs-extra: "npm:11.2.0"
+  peerDependencies:
+    "@mikro-orm/core": ^6.0.0
+  checksum: a23751053d120089546eba9e87497d246f7c28c765bd1def8948464eea6e6dde02151eb36f8fea07bdde21d03c2f13117ebf2e2a93c3ad301200716162b07c33
+  languageName: node
+  linkType: hard
+
 "@mikro-orm/knex@npm:6.0.5":
   version: 6.0.5
   resolution: "@mikro-orm/knex@npm:6.0.5"
@@ -1025,6 +1037,18 @@ __metadata:
   peerDependencies:
     "@mikro-orm/core": ^6.0.0
   checksum: 39c7a921479c905d287d286a94ea6392694173137a137f43b7b639546e514bdaf9c83a116ed139c969da3fa2dca1d9e6a06c3942c7769926eb1ae38dff01fb42
+  languageName: node
+  linkType: hard
+
+"@mikro-orm/seeder@npm:^6.0.5":
+  version: 6.0.5
+  resolution: "@mikro-orm/seeder@npm:6.0.5"
+  dependencies:
+    fs-extra: "npm:11.2.0"
+    globby: "npm:11.1.0"
+  peerDependencies:
+    "@mikro-orm/core": ^6.0.0
+  checksum: b99f887bd264b2dfee2169278e83dc071b4f00ffe6ca7b46a9a4db34a3c0d2c562f7f6223694999d0cf14840ac3787fbfc1ca6a4174e88179fa722dcaa868ed3
   languageName: node
   linkType: hard
 
@@ -7915,10 +7939,12 @@ __metadata:
   dependencies:
     "@mikro-orm/cli": "npm:^6.0.5"
     "@mikro-orm/core": "npm:6.0.5"
+    "@mikro-orm/entity-generator": "npm:^6.0.5"
     "@mikro-orm/migrations": "npm:6.0.5"
     "@mikro-orm/nestjs": "npm:5.2.3"
     "@mikro-orm/postgresql": "npm:6.0.5"
     "@mikro-orm/reflection": "npm:6.0.5"
+    "@mikro-orm/seeder": "npm:^6.0.5"
     "@mikro-orm/sql-highlighter": "npm:1.0.1"
     "@nestjs/cli": "npm:^10.3.0"
     "@nestjs/common": "npm:^10.3.1"
