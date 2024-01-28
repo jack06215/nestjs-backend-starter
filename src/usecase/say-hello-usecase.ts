@@ -1,10 +1,10 @@
 import { Injectable } from '@nestjs/common';
-import { SayHelloResponseModel } from 'src/presentation/models/say-hello';
+import { SayHelloResponse } from 'src/presentation/responses/say-hello';
 
 @Injectable()
 export class SayHelloUseCase {
-  constructor() {}
-  execute(): SayHelloResponseModel {
+  constructor() { }
+  execute(): SayHelloResponse {
     return {
       message: 'Hello World',
     };
