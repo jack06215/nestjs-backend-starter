@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { HelloController } from './presentation/controllers/hello.controller';
+import { SayHelloUseCase } from './usecase/say-hello-world-usecase';
 
 @Module({
   imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [HelloController],
+  providers: [SayHelloUseCase],
 })
 export class AppModule {}

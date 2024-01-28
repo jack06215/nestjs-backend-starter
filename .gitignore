@@ -46,3 +46,4 @@ lerna-debug.log*
 .env.development
 .env.test
 /.yarn
+/docker
