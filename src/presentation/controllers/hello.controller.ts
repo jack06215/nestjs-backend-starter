@@ -1,17 +1,18 @@
 import { Controller, Get } from '@nestjs/common';
 import { ApiCreatedResponse, ApiTags } from '@nestjs/swagger';
-import { SayHelloUseCase } from 'src/usecase/say-hello-world-usecase';
+import { SayHelloUseCase } from 'src/usecase/say-hello-usecase';
+import { SayHelloResponseModel } from '../models/say-hello';
 
 @ApiTags('Hello')
 @Controller()
 export class HelloController {
-  constructor(private readonly sayHelloUseCase: SayHelloUseCase) { }
+  constructor(private readonly sayHelloUseCase: SayHelloUseCase) {}
 
   @ApiCreatedResponse({
     description: 'Return Hello World',
   })
   @Get()
-  getHello(): string {
+  getHello(): SayHelloResponseModel {
     return this.sayHelloUseCase.execute();
   }
 }

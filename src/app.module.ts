@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { HelloController } from './presentation/controllers/hello.controller';
-import { SayHelloUseCase } from './usecase/say-hello-world-usecase';
+import { SayHelloUseCase } from './usecase/say-hello-usecase';
 
 @Module({
   imports: [],
