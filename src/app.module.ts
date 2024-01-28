@@ -21,4 +21,4 @@ import { Sample1Database } from './infrastructure/sample1-database/sample1-datab
   controllers: [HelloController],
   providers: [SayHelloUseCase],
 })
-export class AppModule { }
+export class AppModule {}

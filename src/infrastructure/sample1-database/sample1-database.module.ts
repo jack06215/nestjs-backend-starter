@@ -32,4 +32,4 @@ const logger = new Logger('MikroORM');
     }),
   ],
 })
-export class Sample1Database { }
+export class Sample1Database {}
