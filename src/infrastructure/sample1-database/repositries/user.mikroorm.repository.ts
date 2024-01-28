@@ -11,7 +11,12 @@ export class UserMikroOrmRepository extends UserRepository {
   ) {
     super();
   }
-  allUsers(): Promise<User[]> {
-    throw new Error('Method not implemented.');
+  allUsers(): User[] {
+    return [
+      {
+        id: '1',
+        email: 'johnsmith@example.com',
+      },
+    ];
   }
 }
