@@ -6,7 +6,7 @@ import { SayHelloResponse } from '../responses/say-hello';
 @ApiTags('Hello API')
 @Controller('hello')
 export class HelloController {
-  constructor(private readonly sayHelloUseCase: SayHelloUseCase) { }
+  constructor(private readonly sayHelloUseCase: SayHelloUseCase) {}
 
   @ApiCreatedResponse({
     description: 'Return Hello World',
