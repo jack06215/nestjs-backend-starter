@@ -7,7 +7,7 @@ async function bootstrap() {
   // Configure api doc
   const config = new DocumentBuilder()
     .setTitle('Nestjs Clean Architecture Server')
-    .addTag('Hello', 'Hello API')
+    .addTag('Hello API', 'Say hello world and does nothing else')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('docs', app, document);

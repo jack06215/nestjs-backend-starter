@@ -3,10 +3,10 @@ import { ApiCreatedResponse, ApiTags } from '@nestjs/swagger';
 import { SayHelloUseCase } from 'src/usecase/say-hello-usecase';
 import { SayHelloResponse } from '../responses/say-hello';
 
-@ApiTags('Hello')
-@Controller()
+@ApiTags('Hello API')
+@Controller('hello')
 export class HelloController {
-  constructor(private readonly sayHelloUseCase: SayHelloUseCase) {}
+  constructor(private readonly sayHelloUseCase: SayHelloUseCase) { }
 
   @ApiCreatedResponse({
     description: 'Return Hello World',
