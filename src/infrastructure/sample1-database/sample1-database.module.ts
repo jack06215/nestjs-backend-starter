@@ -2,7 +2,7 @@ import { Logger, Module } from '@nestjs/common';
 import { PostgreSqlDriver } from '@mikro-orm/postgresql';
 import { TsMorphMetadataProvider } from '@mikro-orm/reflection';
 import { SqlHighlighter } from '@mikro-orm/sql-highlighter';
-import Address from './infrastructure/database/address.entity';
+import Address from './entities/address.entity';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MikroOrmModule } from '@mikro-orm/nestjs';
 
@@ -32,4 +32,4 @@ const logger = new Logger('MikroORM');
     }),
   ],
 })
-export class Database1Module { }
+export class Sample1Database { }

@@ -3,7 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import * as Joi from 'joi';
 import { HelloController } from './presentation/controllers/hello.controller';
 import { SayHelloUseCase } from './usecase/say-hello-usecase';
-import { Database1Module } from './database1.module';
+import { Sample1Database } from './infrastructure/sample1-database/sample1-database.module';
 
 @Module({
   imports: [
@@ -16,7 +16,7 @@ import { Database1Module } from './database1.module';
         POSTGRES_DB: Joi.string().required(),
       }),
     }),
-    Database1Module,
+    Sample1Database,
   ],
   controllers: [HelloController],
   providers: [SayHelloUseCase],

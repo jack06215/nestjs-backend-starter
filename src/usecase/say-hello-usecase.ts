@@ -3,7 +3,7 @@ import { SayHelloResponse } from 'src/presentation/responses/say-hello';
 
 @Injectable()
 export class SayHelloUseCase {
-  constructor() { }
+  constructor() {}
   execute(): SayHelloResponse {
     return {
       message: 'Hello World',
