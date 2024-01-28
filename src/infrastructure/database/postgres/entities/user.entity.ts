@@ -1,5 +1,5 @@
 import { BaseEntity, Entity, PrimaryKey, Property } from '@mikro-orm/core';
-import { User } from '../../../domain/user.model';
+import { User } from '../../../../domain/user.model';
 import { v4 as uuidv4 } from 'uuid';
 
 @Entity({ tableName: 'users' })

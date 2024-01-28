@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import * as Joi from 'joi';
-import { Sample1Database } from './infrastructure/sample1-database/sample1-database.module';
-import { UserModule } from './domain/user.module';
+import { Sample1Database } from './infrastructure/database/postgres/postgres.module';
+import { UserModule } from './infrastructure/repositories/user.module';
 
 @Module({
   imports: [
